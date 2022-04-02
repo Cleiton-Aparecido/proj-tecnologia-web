@@ -22,10 +22,10 @@ header#cabecalho {
 }
 
 header#cabecalho #logo {
-    border: px solid white;
+    /* border: 1px solid white; */
     margin-left: 10px;
     color: white;
-    width: 10%;
+    width: 15%;
     max-width: 140px;
     min-width: 125px;
     height: 100%;
@@ -57,7 +57,7 @@ header#cabecalho #navegacao ul li a {
 }
 
 header#cabecalho #navegacao ul li a#principal {
-    padding: 12px;
+    padding: 20px;
 }
 
 header#cabecalho #navegacao ul li a:hover {
