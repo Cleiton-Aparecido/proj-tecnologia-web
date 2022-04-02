@@ -81,6 +81,7 @@ section#container_master {
     padding: 20px;
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 
@@ -95,19 +96,50 @@ section#container_master article {
 
 /* inicio --- estilização container 1 */
 
-section#container_master article#conteudo1 {
+
+/* inicio estilização do titulos */
+
+section#container_master article#conteudo {
     width: 70%;
+    min-width: 720px;
+    margin-bottom: 10px;
 }
 
-section#container_master article#conteudo1 section.container {
+section#container_master article#conteudo section.conteudo_inf header.container_titulo {
     display: flex;
     align-items: center;
+}
+
+
+/* fim estilização do titulos */
+
+
+/* inicio estilização conteudo 1 */
+
+section#container_master article#conteudo section.conteudo_inf main {
+    border: 1px solid black;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+
+section#container_master article#conteudo section.conteudo_inf main h3 {
+    text-align: center;
+    color: wheat;
+    background-color: black;
+    font-size: 1.6em;
+    padding: 3px;
+}
+
+section#container_master article#conteudo section.conteudo_inf main ol {
+    width: 80%;
+    margin: 5px auto;
 }
 
 
 /* fim --- estilização container 1 */
 
 section#container_master #conteudo2 {
-    width: 28%;
+    width: 26%;
+    min-width: 200px;
     margin-left: 5px;
 }
