@@ -83,15 +83,29 @@ section#container_master {
     justify-content: space-between;
 }
 
+
+/* estilização container master */
+
 section#container_master article {
-    background-color: #e7bfbf;
+    background-color: #f1e0ff4f;
     border-radius: 5px;
     padding: 10px;
 }
 
-section#container_master #conteudo1 {
+
+/* inicio --- estilização container 1 */
+
+section#container_master article#conteudo1 {
     width: 70%;
 }
+
+section#container_master article#conteudo1 section.container {
+    display: flex;
+    align-items: center;
+}
+
+
+/* fim --- estilização container 1 */
 
 section#container_master #conteudo2 {
     width: 28%;
