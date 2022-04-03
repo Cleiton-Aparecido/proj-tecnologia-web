@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="style_cleiton.css">
+  <title>Cadastro</title>
+
+</head>
+<style>
+  .formulario {
+    background-color: white;
+    width: 100%;
+    max-width: 1150px;
+    min-width: 400px;
+    margin: 0 auto;
+    margin-top: 10px;
+    border-radius: 5px;
+    padding: 20px;
+  }
+
+  .navbartabs {
+    margin-left: 50px;
+    margin-bottom: 30px;
+  }
+
+  .filme-button {
+    font-size: 18px;
+    background-color: red;
+    color: white;
+    border-radius: 10px;
+    border: none;
+    height: 50px;
+    width: 100px;
+    padding: 10px;
+    cursor: pointer;
+  }
+
+  .serie-button {
+    font-size: 18px;
+    background-color: red;
+    color: white;
+    border-radius: 10px;
+    border: none;
+    height: 50px;
+    width: 100px;
+    margin-left: 20px;
+    cursor: pointer;
+  }
+</style>
+
+<body onload="openform('filme')">
+  <header id="cabecalho">
+    <div id="logo">
+      <h1>FILME & <br>SERIE</h1>
+    </div>
+    <nav id="navegacao">
+      <ul>
+        <li><a id="principal" href="index.html">Home</a></li>
+        <li><a href="filme.html">Filme</a></li>
+        <li><a href="serie.html">Serie</a></li>
+        <li><a href="landing_page.html">landing page</a></li>
+      </ul>
+    </nav>
+  </header>
+  <section class="formulario">
+    <nav class="navbartabs">
+      <div>
+        <button class="filme-button" onclick="openform('filme')">Filme</button>
+        <button class="serie-button" onclick="openform('serie')">Serie</button>
+      </div>
+    </nav>
+
+    <div id="filme" class="filme form">
+      <h1>Cadastro de filme</h1>
+      <form action="">
+        <fieldset>
+          <label for="titulo">Titulo do filme</label>
+          <input type="text" id="titulo" required>
+
+          <label for="sinopse">Sinopse</label>
+          <textarea name="sinopse" id="sinopse" cols="30" rows="10"></textarea>
+
+          <label for="duracao">Duração</label>
+          <input type="time" id="duracao" required>
+
+          <label for="lancamento">Data de Lançamento</label>
+          <input type="date" id="lancamento" required>
+
+          <label for="diretor">Diretor</label>
+          <input type="text" id="diretor">
+
+          <label for="atores">Atores principais</label>
+          <input type="text" id="atores">
+
+          <label for="classificacao">Classificação indicativa</label>
+          <select name="classificacao" id="classificacao" required>
+            <option value="0">Livre</option>
+            <option value="10">Para maiores de 10 anos</option>
+            <option value="12">Para maiores de 12 anos</option>
+            <option value="14">Para maiores de 14 anos</option>
+            <option value="16">Para maiores de 16 anos</option>
+            <option value="18">Para maiores de 18 anos</option>
+          </select>
+
+          <button type="submit">Salvar Filme</button>
+        </fieldset>
+      </form>
+    </div>
+    <div id="serie" class="serie form">
+      <h1>Cadastro de serie</h1>
+      <form action="">
+        <fieldset>
+          <label for="titulo">Titulo da Serie</label>
+          <input type="text" id="titulo" required>
+
+          <label for="sinopse">Sinopse</label>
+          <textarea name="sinopse" id="sinopse" cols="30" rows="10"></textarea>
+
+          <label for="duracao">Duração por episódio</label>
+          <input type="time" id="duracao" required>
+
+          <label for="num_temp">Numero de temporadas</label>
+          <input type="number" id="num_temp">
+
+          <label for="num_ep">Numero de episódio</label>
+          <input type="number" id="num_ep">
+
+          <label for="lancamento">Data de Lançamento</label>
+          <input type="date" id="lancamento" required>
+
+
+          <label for="diretor">Diretor</label>
+          <input type="text" id="diretor">
+
+          <label for="atores">Atores principais</label>
+          <input type="text" id="atores">
+
+          <label for="classificacao">Classificação indicativa</label>
+          <select name="classificacao" id="classificacao" required>
+            <option value="0">Livre</option>
+            <option value="10">Para maiores de 10 anos</option>
+            <option value="12">Para maiores de 12 anos</option>
+            <option value="14">Para maiores de 14 anos</option>
+            <option value="16">Para maiores de 16 anos</option>
+            <option value="18">Para maiores de 18 anos</option>
+          </select>
+
+          <button type="submit">Salvar Filme</button>
+        </fieldset>
+      </form>
+    </div>
+
+    </div>
+  </section>
+  <!-- <footer>
+        <h4>Todos os direitos reservados</h4>
+    </footer> -->
+</body>
+<script>
+  function openform(formName) {
+    var i;
+    var x = document.getElementsByClassName("form");
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none";
+    }
+    document.getElementById(formName).style.display = "block";
+  }
+</script>
+
+</html>
