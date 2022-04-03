@@ -1,0 +1,39 @@
+.formulario {
+  background-color: white;
+  width: 100%;
+  max-width: 1150px;
+  min-width: 400px;
+  margin: 0 auto;
+  margin-top: 10px;
+  border-radius: 5px;
+  padding: 20px;
+}
+
+.navbartabs {
+  margin-left: 50px;
+  margin-bottom: 30px;
+}
+
+.filme-button {
+  font-size: 18px;
+  background-color: red;
+  color: white;
+  border-radius: 10px;
+  border: none;
+  height: 50px;
+  width: 100px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.serie-button {
+  font-size: 18px;
+  background-color: red;
+  color: white;
+  border-radius: 10px;
+  border: none;
+  height: 50px;
+  width: 100px;
+  margin-left: 20px;
+  cursor: pointer;
+}
