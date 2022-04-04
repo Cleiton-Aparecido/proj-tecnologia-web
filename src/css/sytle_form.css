@@ -1,10 +1,14 @@
+img {
+  border-radius: 100px;
+}
+
 .formulario {
   background-color: white;
   width: 100%;
   max-width: 1150px;
   min-width: 400px;
   margin: 0 auto;
-  margin-top: 10px;
+  margin-top: 20px;
   border-radius: 5px;
   padding: 20px;
 }
@@ -44,6 +48,7 @@ form {
 }
 .imageConteiner{
   padding: 20px;
+  margin-top: 20px;
 }
 fieldset {
   width: 500px;
@@ -113,4 +118,15 @@ select {
   height: 20px;
   border: 1px solid;
   border-radius: 10px;
+}
+
+button {
+  margin: 15px;
+  height: 25px;
+  width: 100px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  color: white;
+  background-color: red;
 }
