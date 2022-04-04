@@ -5,6 +5,8 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <link rel="stylesheet" type="text/css" href="style_cleiton.css">
   <link rel="stylesheet" type="text/css" href="src/css/sytle_form.css">
   <title>Cadastro</title>
@@ -18,10 +20,10 @@
     </div>
     <nav id="navegacao">
       <ul>
-        <li><a id="principal" href="index.html">Home</a></li>
+        <li><a  href="index.html">Home</a></li>
         <li><a href="filme.html">Filme</a></li>
         <li><a href="serie.html">Serie</a></li>
-        <li><a href="landing_page.html">landing page</a></li>
+        <li><a id="principal" href="landing_page.html">landing page</a></li>
       </ul>
     </nav>
   </header>
@@ -35,36 +37,26 @@
     </nav>
 
     <div id="filme" class="filme form">
-      
+      <h1>Cadastro de filme</h1>
       <form action="">
-        <div class="imageConteiner">
-          <img src="img/logotipo-filme.png" alt="" width="400" height="400" id="imageMovie">
-        </div>
         <fieldset>
-          <h1 style="padding: 50px;">Cadastro de filme</h1>
           <label for="titulo">Titulo do filme</label>
           <input type="text" id="titulo" required>
 
           <label for="sinopse">Sinopse</label>
-          <textarea name="sinopse" id="sinopse" cols="60" rows="6"></textarea>
-          <div class="tempo">
-            <label for="duracao">Duração</label>
-            <input type="time" id="duracao" required>
+          <textarea name="sinopse" id="sinopse" cols="30" rows="10"></textarea>
 
-            <label for="lancamento">Data de Lançamento</label>
-            <input type="date" id="lancamento" required>
-          </div>
-          <div class="filmeStaff">
-            <label for="diretor">Diretor</label>
-            <input type="text" id="diretor">
+          <label for="duracao">Duração</label>
+          <input type="time" id="duracao" required>
 
-            <label for="atores">Atores principais</label>
-            <input type="text" id="atores">
-          </div>
-          <label for="capaf">Capa do Filme</label>
-          <input type="file" name="capaf" id="capaf" onchange="prewiewImage('imageMovie','capaf')">
+          <label for="lancamento">Data de Lançamento</label>
+          <input type="date" id="lancamento" required>
 
+          <label for="diretor">Diretor</label>
+          <input type="text" id="diretor">
 
+          <label for="atores">Atores principais</label>
+          <input type="text" id="atores">
 
           <label for="classificacao">Classificação indicativa</label>
           <select name="classificacao" id="classificacao" required>
@@ -81,35 +73,33 @@
       </form>
     </div>
     <div id="serie" class="serie form">
-      
+      <h1>Cadastro de serie</h1>
       <form action="">
-        <div class="imageConteiner" style="margin-top: 20px;">
-          <img src="img/logotipo-serie.png" alt="" width="400" height="400" id="imageSerie">
-        </div>
         <fieldset>
-          <h1 style="padding: 50px;">Cadastro de serie</h1>
           <label for="titulo">Titulo da Serie</label>
           <input type="text" id="titulo" required>
 
           <label for="sinopse">Sinopse</label>
-          <textarea name="sinopse" id="sinopse" cols="60" rows="6"></textarea>
-          <div class="tempo">
-            <label for="duracao">Duração</label>
-            <input type="time" id="duracao" required>
+          <textarea name="sinopse" id="sinopse" cols="30" rows="10"></textarea>
 
-            <label for="lancamento">Data de Lançamento</label>
-            <input type="date" id="lancamento" required>
-          </div>
+          <label for="duracao">Duração por episódio</label>
+          <input type="time" id="duracao" required>
 
-          <div class="filmeStaff">
-            <label for="diretor">Diretor</label>
-            <input type="text" id="diretor">
+          <label for="num_temp">Numero de temporadas</label>
+          <input type="number" id="num_temp">
 
-            <label for="atores">Atores principais</label>
-            <input type="text" id="atores">
-          </div>
-          <label for="capaserie">Capa da Serie</label>
-          <input type="file" name="capaserie" id="capaserie" onchange="prewiewImage('imageSerie','capaserie')">
+          <label for="num_ep">Numero de episódio</label>
+          <input type="number" id="num_ep">
+
+          <label for="lancamento">Data de Lançamento</label>
+          <input type="date" id="lancamento" required>
+
+
+          <label for="diretor">Diretor</label>
+          <input type="text" id="diretor">
+
+          <label for="atores">Atores principais</label>
+          <input type="text" id="atores">
 
           <label for="classificacao">Classificação indicativa</label>
           <select name="classificacao" id="classificacao" required>
@@ -120,13 +110,7 @@
             <option value="16">Para maiores de 16 anos</option>
             <option value="18">Para maiores de 18 anos</option>
           </select>
-          <div class="temporadas">
-            <label for="num_temp">Temporadas</label>
-            <input type="number" id="num_temp">
 
-            <label for="num_ep">Episódio</label>
-            <input type="number" id="num_ep">
-          </div>
           <button type="submit">Salvar Filme</button>
         </fieldset>
       </form>
@@ -135,8 +119,8 @@
     </div>
   </section>
   <!-- <footer>
-        <h4>Todos os direitos reservados</h4>
-    </footer> -->
+    <h4>Todos os direitos reservados</h4>
+  </footer> -->
 
 </body>
 
