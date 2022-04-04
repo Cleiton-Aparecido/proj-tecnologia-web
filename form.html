@@ -10,6 +10,7 @@
   <title>Cadastro</title>
 
 </head>
+
 <body onload="openform('filme')">
   <header id="cabecalho">
     <div id="logo">
@@ -34,26 +35,36 @@
     </nav>
 
     <div id="filme" class="filme form">
-      <h1>Cadastro de filme</h1>
+      
       <form action="">
+        <div class="imageConteiner">
+          <img src="img/logotipo-filme.png" alt="" width="400" height="400" id="imageMovie">
+        </div>
         <fieldset>
+          <h1 style="padding: 50px;">Cadastro de filme</h1>
           <label for="titulo">Titulo do filme</label>
           <input type="text" id="titulo" required>
 
           <label for="sinopse">Sinopse</label>
-          <textarea name="sinopse" id="sinopse" cols="30" rows="10"></textarea>
+          <textarea name="sinopse" id="sinopse" cols="60" rows="6"></textarea>
+          <div class="tempo">
+            <label for="duracao">Duração</label>
+            <input type="time" id="duracao" required>
 
-          <label for="duracao">Duração</label>
-          <input type="time" id="duracao" required>
+            <label for="lancamento">Data de Lançamento</label>
+            <input type="date" id="lancamento" required>
+          </div>
+          <div class="filmeStaff">
+            <label for="diretor">Diretor</label>
+            <input type="text" id="diretor">
 
-          <label for="lancamento">Data de Lançamento</label>
-          <input type="date" id="lancamento" required>
+            <label for="atores">Atores principais</label>
+            <input type="text" id="atores">
+          </div>
+          <label for="capaf">Capa do Filme</label>
+          <input type="file" name="capaf" id="capaf" onchange="prewiewImage('imageMovie','capaf')">
 
-          <label for="diretor">Diretor</label>
-          <input type="text" id="diretor">
 
-          <label for="atores">Atores principais</label>
-          <input type="text" id="atores">
 
           <label for="classificacao">Classificação indicativa</label>
           <select name="classificacao" id="classificacao" required>
@@ -70,33 +81,35 @@
       </form>
     </div>
     <div id="serie" class="serie form">
-      <h1>Cadastro de serie</h1>
+      
       <form action="">
+        <div class="imageConteiner" style="margin-top: 20px;">
+          <img src="img/logotipo-serie.png" alt="" width="400" height="400" id="imageSerie">
+        </div>
         <fieldset>
+          <h1 style="padding: 50px;">Cadastro de serie</h1>
           <label for="titulo">Titulo da Serie</label>
           <input type="text" id="titulo" required>
 
           <label for="sinopse">Sinopse</label>
-          <textarea name="sinopse" id="sinopse" cols="30" rows="10"></textarea>
+          <textarea name="sinopse" id="sinopse" cols="60" rows="6"></textarea>
+          <div class="tempo">
+            <label for="duracao">Duração</label>
+            <input type="time" id="duracao" required>
 
-          <label for="duracao">Duração por episódio</label>
-          <input type="time" id="duracao" required>
+            <label for="lancamento">Data de Lançamento</label>
+            <input type="date" id="lancamento" required>
+          </div>
 
-          <label for="num_temp">Numero de temporadas</label>
-          <input type="number" id="num_temp">
+          <div class="filmeStaff">
+            <label for="diretor">Diretor</label>
+            <input type="text" id="diretor">
 
-          <label for="num_ep">Numero de episódio</label>
-          <input type="number" id="num_ep">
-
-          <label for="lancamento">Data de Lançamento</label>
-          <input type="date" id="lancamento" required>
-
-
-          <label for="diretor">Diretor</label>
-          <input type="text" id="diretor">
-
-          <label for="atores">Atores principais</label>
-          <input type="text" id="atores">
+            <label for="atores">Atores principais</label>
+            <input type="text" id="atores">
+          </div>
+          <label for="capaserie">Capa da Serie</label>
+          <input type="file" name="capaserie" id="capaserie" onchange="prewiewImage('imageSerie','capaserie')">
 
           <label for="classificacao">Classificação indicativa</label>
           <select name="classificacao" id="classificacao" required>
@@ -107,7 +120,13 @@
             <option value="16">Para maiores de 16 anos</option>
             <option value="18">Para maiores de 18 anos</option>
           </select>
+          <div class="temporadas">
+            <label for="num_temp">Temporadas</label>
+            <input type="number" id="num_temp">
 
+            <label for="num_ep">Episódio</label>
+            <input type="number" id="num_ep">
+          </div>
           <button type="submit">Salvar Filme</button>
         </fieldset>
       </form>
@@ -118,7 +137,7 @@
   <!-- <footer>
         <h4>Todos os direitos reservados</h4>
     </footer> -->
- 
+
 </body>
 
 </html>

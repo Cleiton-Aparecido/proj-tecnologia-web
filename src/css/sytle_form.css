@@ -37,3 +37,80 @@
   margin-left: 20px;
   cursor: pointer;
 }
+
+form {
+  display: flex;
+  justify-content: space-around;
+}
+.imageConteiner{
+  padding: 20px;
+}
+fieldset {
+  width: 500px;
+  margin-left: 100px;
+  border: 1px solid black;
+  border-radius: 8px;
+}
+
+label {
+  display: block;
+  margin-left: 15px;
+  margin-bottom: 10px;
+}
+
+.temporadas {
+  display: flex;
+  justify-content: space-between;
+}
+
+.temporadas input {
+  width: 50px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.tempo {
+  display: flex;
+  justify-content: space-between;
+}
+
+.filmeStaff {
+  display: flex;
+  justify-content: space-between;
+}
+
+.filmeStaff input {
+  width: 100px;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.tempo input {
+  width: 100px;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+input {
+  margin-left: 15px;
+  margin-bottom: 10px;
+  height: 20px;
+  width: 200px;
+  border: 1px solid;
+  border-radius: 8px;
+}
+
+textarea {
+  margin-left: 15px;
+  margin-bottom: 10px;
+  border: 1px solid;
+  border-radius: 8px;
+}
+
+select {
+  margin-left: 15px;
+  margin-bottom: 10px;
+  height: 20px;
+  border: 1px solid;
+  border-radius: 10px;
+}
