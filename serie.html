@@ -2,16 +2,27 @@
 <html lang="pt-br">
 
 <head>
-    <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/512/21/21194.png">
+    <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/21/21194.png">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="style_cleiton.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="src/css/style.css">
     <title>Filme</title>
 
 </head>
 
 <body>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
     <header id="cabecalho">
         <div id="logo">
             <h1>FILME & <br>SERIE</h1>
@@ -21,11 +32,102 @@
                 <li><a href="index.html">Home</a></li>
                 <li><a href="filme.html">Filme</a></li>
                 <li><a id="principal" href="serie.html">Serie</a></li>
-                <li><a href="landing_page.html">landing pag
+                <li><a href="landing_page.html">Formulário</a></li>
+            </ul>
         </nav>
     </header>
     <section id="container_master">
+        <article id="conteudo">
+            <header class="container_titulo">
+                <figure>
+                    <img style="width:100px;" class="logo" src="img/logotipo-filme.png" alt="logo-filme">
+                </figure>
+                <h2 style="font-size:2.8em; margin-left:10%;">As 10 maiores series
+                </h2>
+            </header>
+            <section class="conteudo_inf">
+                <main>
+                    <ol>
+                        <li>
+                            <h4>AVATAR</h4>
+                            <p>Arrecadação total: US$ 2,847 bilhões
+                            </p>
+                        </li>
+                        <li>
+                            <h4>VINGADORES: ULTIMATO
+                            </h4>
+                            <p>Arrecadação total: US$ 2,797 bilhões
+                            </p>
+                        </li>
+                        <li>
+                            <h4>TITANIC (1997)</h4>
+                            <p>Arrecadação total: US$ 2,201 bilhões
+                            </p>
+                        </li>
+                        <li>
+                            <h4>STAR WARS: O DESPERTAR DA FORÇA (2015)
+                            </h4>
+                            <p>Arrecadação total: US$ 2,069 bilhões
+                            </p>
+                        </li>
+                        <li>
+                            <h4>VINGADORES: GUERRA INFINITA (2018)
+                            </h4>
+                            <p>Arrecadação total: US$ 2,048 bilhões
+                            </p>
+                        </li>
+                        <li>
+                            <h4>HOMEM-ARANHA: SEM VOLTA PARA CASA (2021)
+                            </h4>
+                            <p>Arrecadação total: US$ 1,832 bilhão</p>
+                        </li>
+                        <li>
+                            <h4>JURASSIC WORLD: O MUNDO DOS DINOSSAUROS (2015)
+                            </h4>
+                            <p>Arrecadação total: US$ 1,67 bilhão
+                            </p>
+                        </li>
+                        <li>
+                            <h4>O REI LEÃO (2019)</h4>
+                            <p>Arrecadação total: US$ 1,662 bilhão
+                            </p>
+                        </li>
+                        <li>
+                            <h4>OS VINGADORES (2012)
+                            </h4>
+                            <p>Arrecadação total: US$ 1,518 bilhão
+                            </p>
+                        </li>
+                        <li>
+                            <h4>VELOZES & FURIOSOS 7 (2015)
+                            </h4>
+                            <p>Arrecadação total: US$ 1,515 bilhão
+                            </p>
+                        </li>
+                    </ol>
+                </main>
+            </section>
+            <!-- <section class="conteudo_inf">
+                <main></main>
+            </section> -->
 
+        </article>
+        <article id="conteudo2">
+            <section class="container_plataformas">
+                <h5>Qual sua serie favorita?</h5>
+                <fieldset style="text-align: center;">
+                    <form action="">
+                        <label for="nome">Qual seu nome?</label>
+                        <input type="text" id="nome">
+                        <label for="email">Qual seu e-mail?</label>
+                        <input type="email" id="email">
+                        <label for="filme">Qual o nome da sua serie favorita?</label>
+                        <textarea name="" id="filme" cols="30" rows="5"></textarea>
+                        <input class="btn btn-success" type="submit">
+                    </form>
+                </fieldset>
+            </section>
+        </article>
 
     </section>
     <!-- <footer>
