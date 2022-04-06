@@ -23,41 +23,45 @@ header#cabecalho {
 }
 
 header#cabecalho #logo {
-    /* border: 1px solid yellow; */
-    margin-top: 5px;
+    /* margin-top: 5px; */
     margin-left: 5px;
-    margin-bottom: 10px;
+    /* margin-bottom: 10px; */
     color: white;
-    width: 20%;
-    max-width: 200px;
+    /* width: 20%; */
+    /* max-width: 200px; */
     /* min-width: 125px; */
     /* max-height: 150px   ; */
-    height: 100%;
-    display: flex;
-    align-items: center;
+    /* height: 100%; */
+    /* display: flex; */
+    /* align-items: center; */
+ } 
+header#cabecalho #logo h1{
+    font-weight: bold;
+    font-size: 40px;
+    font-family: 'Times New Roman';
 }
 
 header#cabecalho #navegacao {
-    /* border: px solid white; */
-    margin-bottom: 10px;
+    margin-top: 10px;
     display: flex;
-    align-items: flex-end;
-}
+    }
 
 header#cabecalho #navegacao ul li {
     display: inline;
     margin-right: 30px;
     margin-bottom: 10px;
+    
     border: 2px solid white;
     border-radius: 10px;
     padding: 6px;
-    height: 20000px;
+   
 }
 
 header#cabecalho #navegacao ul li a {
     color: white;
     font-size: 20px;
     text-decoration: none;
+    
 }
 
 header#cabecalho #navegacao ul li a#principal {
@@ -109,12 +113,13 @@ section#container_master article#conteudo {
     min-width: 720px;
     margin-bottom: 10px;
 }
-
 section#container_master header.container_titulo {
     display: flex;
     align-items: center;
 }
-
+section#container_master header.container_titulo h2 {
+   color: black;
+}
 
 /* fim estilização do titulos */
 
