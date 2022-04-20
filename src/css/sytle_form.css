@@ -39,13 +39,15 @@
 }
 
 form {
-  display: flex;
-  justify-content: space-around;
+  display: grid;
+  grid-column: 1fr 1fr;
 }
 .imageConteiner{
+  grid-column: 1;
   padding: 20px;
 }
 fieldset {
+  grid-column: 2;
   width: 500px;
   margin-left: 100px;
   border: 1px solid black;
