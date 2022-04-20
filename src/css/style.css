@@ -60,17 +60,20 @@ nav#navegacao ul li a:active{
     background-color: black;
     color: yellowgreen;
 }
-nav#navegacao ul li a:link{
+nav#navegacao ul li a:visited{
     color: black;
 }
-a.trailer{
+nav#navegacao ul li a:link{
+    color: white;
+}
+/* a.trailer{
     
 }
 a.trailer:link{
     color: black;
 }
 a.trailer:visited{
-    color: blue;
+    color: blue; */
 }
 
 /* fim da estilização do cabecalho */
