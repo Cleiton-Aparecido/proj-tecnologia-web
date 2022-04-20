@@ -42,7 +42,7 @@ nav#navegacao ul li{
     display: inline;
     list-style-type: none;
     margin-right: 10px;
-  
+    color: white;
 }
 nav#navegacao ul li a{
     color: white;
@@ -63,10 +63,15 @@ nav#navegacao ul li a:active{
 nav#navegacao ul li a:link{
     color: black;
 }
-nav#navegacao ul li a:visited{
+a.trailer{
+    
+}
+a.trailer:link{
+    color: black;
+}
+a.trailer:visited{
     color: blue;
 }
-
 
 /* fim da estilização do cabecalho */
 
